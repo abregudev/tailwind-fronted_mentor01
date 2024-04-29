@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .wrapper {
+        @apply w-[90%] mx-auto overflow-hidden max-w-screen-xl;
+    }
+
+    .iconos {
+        background-image: url('../images/icon-close.svg');
+        background-image: url('../images/icon-hamburger.svg');
+    }
+    .button {
+        @apply bg-brigth-red text-very-ligth-gray block w-max py-4 px-12 rounded-full;
+    }
+
+    .footer-area {
+        grid-template-areas: 
+        "form"
+        "navigation"
+        "social-media"
+        "logo"
+        "copy";
+    }
+
+    .footer-area-md{
+        grid-template-areas: 
+        "logo navigation form"
+        "social-media navigation copy"
+        ;
+    }
+}
